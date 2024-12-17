@@ -18,6 +18,9 @@ gem "github-pages", group: :jekyll_plugins
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
+# Add tzinfo-data for Windows time zone support
+gem "tzinfo-data"  # Add this line
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "jekyll-archives"
@@ -25,3 +28,5 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'hawkins'
 end
+
+gem "webrick", "~> 1.8"
