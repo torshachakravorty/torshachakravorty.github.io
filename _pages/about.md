@@ -8,8 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. candidate in Economics at UC San Diego. My research focuses on the provision,
-targeting, and role of informal brokers in public service delivery. 
+I am a Ph.D. candidate in Economics at UC San Diego. My research focuses on topics in Development and Public Economics.
 
 ## Education
 - PhD in Economics, Economics, UC San Diego (Current)
