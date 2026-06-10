@@ -14,7 +14,7 @@ redirect_from:
          alt="Torsha Chakravorty, Ph.D. candidate in Economics at UC San Diego." />
   </div>
   <h1 class="rd-hero__name">Torsha Chakravorty</h1>
-  <p class="rd-hero__lede">Ph.D. candidate in Economics at UC San Diego, working in development and public economics.</p>
+  <p class="rd-hero__lede">Ph.D. candidate in Economics at UC San Diego.</p>
   <ul class="rd-linkrow">
     <li><a href="{{ '/cv/' | relative_url }}">CV</a></li>
     <li><a href="https://github.com/torshachakravorty">GitHub</a></li>
