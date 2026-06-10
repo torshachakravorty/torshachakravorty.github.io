@@ -16,7 +16,9 @@ gem "github-pages", group: :jekyll_plugins
 
 # gem "jekyll"
 
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
+# wdm removed: native gem won't build on Ruby 4.0 and is only an optional
+# Windows file-watcher. Jekyll uses the cross-platform `listen` gem instead.
+# gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # Add tzinfo-data for Windows time zone support
 gem "tzinfo-data"  # Add this line
