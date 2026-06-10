@@ -104,6 +104,13 @@ $rd-content-max: 88rem;   /* ~1408px hard ceiling so prose never runs absurdly w
   padding-right: 0;
 }
 
+/* Center the masthead nav (site title + links) to match the symmetric hero.
+   .visible-links is display:table, so auto side-margins centre it. */
+.greedy-nav .visible-links {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* --------------------------------------------------------------------------
    Shared primitives
    -------------------------------------------------------------------------- */
@@ -213,32 +220,38 @@ $rd-content-max: 88rem;   /* ~1408px hard ceiling so prose never runs absurdly w
 /* --------------------------------------------------------------------------
    Home — hero + two columns
    -------------------------------------------------------------------------- */
+/* Centered vertical stack: photo → name → positioning line → links. */
 .rd-hero {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: 0.5rem 0 2rem;
-
-  @include breakpoint(max-width $small) {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-  }
+  text-align: center;
+  margin: 1rem 0 2rem;
 }
-.rd-hero__photo { width: 200px; aspect-ratio: 1 / 1.18; }
+.rd-hero__photo {
+  width: 120px;
+  aspect-ratio: 1 / 1.18;
+  margin-bottom: 1.25rem;
+}
 .rd-hero__name {
-  margin: 0 0 0.65rem;
+  margin: 0 0 0.5rem;
   font-family: $serif;
   font-weight: 500;
-  font-size: 2.75rem;       /* ~44px */
+  font-size: 2.5rem;        /* ~40px */
   line-height: 1.1;
   color: $rd-ink;
 }
 .rd-hero__lede {
-  margin: 0;
-  font-size: 1.3125rem;     /* ~21px */
+  max-width: 46ch;          /* keep the positioning line from stretching full width */
+  margin: 0 auto;
+  font-size: 1.25rem;       /* ~20px */
   line-height: 1.5;
   color: $rd-muted;
+}
+/* Center the link row within the centered hero. */
+.rd-hero .rd-linkrow {
+  justify-content: center;
+  margin-top: 1.25rem;
 }
 .rd-about {
   margin: 0 0 0.5rem;

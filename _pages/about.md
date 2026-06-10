@@ -13,11 +13,17 @@ redirect_from:
     <img src="{{ '/images/profile.jpeg' | relative_url }}"
          alt="Torsha Chakravorty, Ph.D. candidate in Economics at UC San Diego." />
   </div>
-  <div class="rd-hero__text">
-    <h1 class="rd-hero__name">Torsha Chakravorty</h1>
-    <p class="rd-hero__lede">Ph.D. candidate in Economics at UC San Diego, working in development and public economics.</p>
-  </div>
+  <h1 class="rd-hero__name">Torsha Chakravorty</h1>
+  <p class="rd-hero__lede">Ph.D. candidate in Economics at UC San Diego, working in development and public economics.</p>
+  <ul class="rd-linkrow">
+    <li><a href="{{ '/cv/' | relative_url }}">CV</a></li>
+    <li><a href="https://github.com/torshachakravorty">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/torsha-chakravorty-460138152/">LinkedIn</a></li>
+    <li><a href="mailto:tchakravorty@ucsd.edu">Email</a></li>
+  </ul>
 </div>
+
+<hr class="rd-divider" />
 
 <div class="rd-about" markdown="1">
 I am a Ph.D. candidate in Economics at UC San Diego. My research is in development
@@ -26,16 +32,6 @@ of public services in settings where the state is weak, often using confidential
 administrative data. Before UC San Diego, I earned an M.A. in Economics at the
 Madras School of Economics and a B.Sc. in Economics at the University of Calcutta.
 </div>
-
-<ul class="rd-linkrow">
-  <li><a href="{{ '/cv/' | relative_url }}">CV</a></li>
-  <li><a href="https://github.com/torshachakravorty">GitHub</a></li>
-  <li><a href="https://www.linkedin.com/in/torsha-chakravorty-460138152/">LinkedIn</a></li>
-  <li><a href="https://economics.ucsd.edu/graduate-program/about/grad-profiles/cohort%202021/Chakravorty-torsha.html">UCSD profile</a></li>
-  <li><a href="mailto:tchakravorty@ucsd.edu">Email</a></li>
-</ul>
-
-<hr class="rd-divider" />
 
 <div class="rd-cols">
 
