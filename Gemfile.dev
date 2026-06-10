@@ -1,0 +1,27 @@
+source "https://rubygems.org"
+
+# Local-development Gemfile — native Jekyll 4 (NOT the classic `github-pages` gem).
+# Reason: modern Ruby (4.x) can't build the old github-pages dependency chain
+# (wdm 0.1, nokogiri 1.16, jekyll 3.9, ...). Native Jekyll 4 == what the kit's
+# DEPLOY-AND-GOTCHAS.md recommends, and matches the GitHub Actions deploy option.
+#
+# The LIVE site (classic GitHub Pages builder) ignores this file; it uses its own
+# server-side gem versions. So this is purely a local preview aid.
+#
+# Use it with:
+#   BUNDLE_GEMFILE=Gemfile.dev bundle install
+#   BUNDLE_GEMFILE=Gemfile.dev bundle exec jekyll serve --livereload
+
+gem "jekyll", "~> 4.4"
+
+# Plugins actually used by _config.yml (the `plugins:` list).
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
+  gem "jekyll-gist"
+  gem "jekyll-paginate"
+  gem "jekyll-redirect-from"
+end
+
+gem "webrick", "~> 1.8"
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]

@@ -40,24 +40,4 @@
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
 
-<!-- Redesign: expandable-abstract toggles (real <button> + aria-expanded, keyboard operable).
-     Each .rd-abs-toggle controls the .rd-abs-body whose id matches its aria-controls. -->
-<script>
-  document.addEventListener("click", function (e) {
-    var btn = e.target.closest(".rd-abs-toggle");
-    if (!btn) return;
-    var body = document.getElementById(btn.getAttribute("aria-controls"));
-    if (!body) return;
-    var open = btn.getAttribute("aria-expanded") === "true";
-    btn.setAttribute("aria-expanded", String(!open));
-    if (open) { body.hidden = true; } else { body.hidden = false; }
-    var label = btn.querySelector(".rd-abs-toggle__label");
-    if (label) {
-      var opened = btn.getAttribute("data-label-open");
-      var closed = btn.getAttribute("data-label-closed");
-      if (opened && closed) { label.textContent = open ? closed : opened; }
-    }
-  });
-</script>
-
 <!-- end custom head snippets -->

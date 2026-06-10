@@ -1,0 +1,412 @@
+/* ==========================================================================
+   Redesign — plum-accent academic/industry theme
+   Component layer. Imported last in assets/css/main.scss so it overrides the
+   Minimal Mistakes theme. Tokens defined in _variables.scss ($rd-*).
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Global tone overrides
+   -------------------------------------------------------------------------- */
+
+body {
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Sentence-case serif headings, two weights only (regular + medium). */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-transform: none;
+}
+
+/* Page title — 26px serif */
+.page__title,
+.archive__subtitle {
+  font-family: $serif;
+  font-weight: 500;
+  font-size: 1.625rem;   /* ~26px */
+  letter-spacing: -0.01em;
+  color: $rd-ink;
+}
+
+/* Body copy rhythm */
+.page__content,
+.archive {
+  p, li {
+    color: $rd-ink;
+    font-size: 1.0625rem;     /* ~17px */
+    line-height: 1.7;
+  }
+}
+
+/* Content links: underlined, plum — never colour alone (a11y). */
+.archive a,
+.page__content a {
+  color: $rd-accent;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 0.06em;
+
+  &:hover { color: mix(#000, $rd-accent, 22%); }
+}
+
+/* Opt-out for elements that carry their own affordance. */
+.archive a.rd-pill,
+.archive a.rd-card,
+.archive a.rd-iconlink,
+.page__content a.rd-pill,
+.page__content a.rd-card,
+.page__content a.rd-iconlink {
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------
+   Content width — reclaim the old author-sidebar gutter.
+   With author_profile:false the sidebar element isn't rendered, so the
+   content is #main's first child. In that case drop the theme's susy
+   span/suffix (which reserved 2/12 for the sidebar and left it empty) and
+   use a centred reading-width column instead. Pages that DO render a
+   sidebar keep the theme layout untouched (content is not :first-child).
+   -------------------------------------------------------------------------- */
+$rd-content-max: 88rem;   /* ~1408px hard ceiling so prose never runs absurdly wide */
+
+/* Fluid width: fill the viewport minus a comfortable side gutter, up to a cap.
+   No fixed pixel column, so it fills any screen size on its own. */
+#main {
+  max-width: $rd-content-max !important;   /* override susy's ~925px container cap */
+  width: 92vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#main > .page:first-child,
+#main > .archive:first-child {
+  float: none;
+  clear: both;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+
+  .page__inner-wrap { width: 100%; max-width: 100%; }
+}
+
+/* Keep the nav bar the same fluid width as the content so they line up. */
+.masthead__inner-wrap {
+  max-width: $rd-content-max !important;
+  width: 92vw;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Shared primitives
+   -------------------------------------------------------------------------- */
+
+/* Eyebrow / label — 11px uppercase, tracked, plum */
+.rd-eyebrow {
+  display: inline-block;
+  margin: 0 0 0.5em;
+  font-family: $sans-serif;
+  font-size: 0.6875rem;     /* 11px */
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: $rd-accent;
+}
+
+/* Section subhead — 16px serif with a hairline underline */
+.rd-subhead {
+  margin: 0 0 1rem;
+  padding-bottom: 0.4rem;
+  font-family: $serif;
+  font-size: 1rem;          /* 16px */
+  font-weight: 500;
+  color: $rd-ink;
+  border-bottom: 1px solid $rd-hairline;
+}
+
+.rd-meta   { font-size: 0.8125rem; color: $rd-faint; }   /* 13px */
+.rd-muted  { color: $rd-muted; }
+.rd-finding { color: $rd-muted; font-size: 0.9375rem; line-height: 1.6; }
+
+.rd-divider {
+  border: 0;
+  border-top: 1px solid $rd-hairline;
+  margin: 2.25rem 0;
+}
+
+/* Tech-tag pills (plum on accent-fill) */
+.rd-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.65rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.rd-pill {
+  display: inline-block;
+  padding: 0.18rem 0.6rem;
+  font-family: $sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: $rd-pill-text;
+  background: $rd-accent-fill;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* Inline link row (CV · Résumé · GitHub …) */
+.rd-linkrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9375rem;
+
+  li { margin: 0; }
+  a  { color: $rd-accent; text-decoration: underline; text-underline-offset: 2px; }
+}
+
+/* Resource links under a paper/project: PDF · Slides · Code */
+.rd-reslinks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.9rem;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8125rem;
+
+  li { margin: 0; }
+  a  { color: $rd-accent; text-decoration: underline; text-underline-offset: 2px; }
+  .rd-reslinks__state { color: $rd-faint; }   /* non-link states: "proprietary", "in progress" */
+}
+
+/* --------------------------------------------------------------------------
+   Arched duotone photo (plum over accent-fill)
+   -------------------------------------------------------------------------- */
+/* Natural photo in the arched frame — no colour treatment. */
+.rd-photo {
+  position: relative;
+  overflow: hidden;
+  background: $rd-accent-fill;
+  border-radius: 44px 44px 10px 10px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Home — hero + two columns
+   -------------------------------------------------------------------------- */
+.rd-hero {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  margin: 0.5rem 0 2rem;
+
+  @include breakpoint(max-width $small) {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+.rd-hero__photo { width: 200px; aspect-ratio: 1 / 1.18; }
+.rd-hero__name {
+  margin: 0 0 0.65rem;
+  font-family: $serif;
+  font-weight: 500;
+  font-size: 2.75rem;       /* ~44px */
+  line-height: 1.1;
+  color: $rd-ink;
+}
+.rd-hero__lede {
+  margin: 0;
+  font-size: 1.3125rem;     /* ~21px */
+  line-height: 1.5;
+  color: $rd-muted;
+}
+.rd-about {
+  margin: 0 0 0.5rem;
+  p { color: $rd-ink; font-size: 1.125rem; line-height: 1.75; }
+}
+
+.rd-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2.25rem;
+
+  @include breakpoint(max-width $small) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Featured item block (accent tint)
+   -------------------------------------------------------------------------- */
+.rd-featured {
+  background: $rd-featured-tint;
+  border: 1px solid $rd-hairline;
+  border-radius: $border-radius-card;
+  padding: 1.4rem 1.5rem;
+  margin: 1.25rem 0 2rem;
+}
+.rd-paper-title {
+  margin: 0.15rem 0 0.5rem;
+  font-family: $serif;
+  font-weight: 500;
+  font-size: 1rem;          /* 15–16px */
+  line-height: 1.35;
+  color: $rd-ink;
+}
+.rd-coauthors { font-size: 0.8125rem; color: $rd-faint; margin: 0 0 0.35rem; }
+
+/* Working papers / WIP list */
+.rd-paperlist { margin: 0; padding: 0; list-style: none; }
+.rd-paperlist > li {
+  margin: 0;
+  padding: 1.25rem 0;
+  border-top: 1px solid $rd-hairline;
+  &:last-child { border-bottom: 1px solid $rd-hairline; }
+}
+
+/* --------------------------------------------------------------------------
+   Expandable abstract (real <button> + aria-expanded, keyboard operable)
+   -------------------------------------------------------------------------- */
+.rd-abs-toggle {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-family: $sans-serif;
+  font-size: 0.8125rem;
+  color: $rd-accent;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+
+  &:focus-visible {
+    outline: 2px solid $rd-accent;
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+
+  /* caret rotates when expanded */
+  &::before {
+    content: "\25B8";              /* ▸ */
+    display: inline-block;
+    font-size: 0.7em;
+    transition: transform 0.15s ease;
+    text-decoration: none;
+  }
+  &[aria-expanded="true"]::before { transform: rotate(90deg); }
+}
+.rd-abs-body {
+  margin: 0.75rem 0 0;
+  padding: 0.9rem 1rem;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid $rd-hairline;
+  border-radius: $border-radius;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: $rd-muted;
+
+  &[hidden] { display: none; }
+  p { margin: 0 0 0.75rem; &:last-child { margin-bottom: 0; } }
+}
+
+/* --------------------------------------------------------------------------
+   Projects
+   -------------------------------------------------------------------------- */
+.rd-projects { margin: 1.5rem 0 0; padding: 0; list-style: none; }
+.rd-project {
+  margin: 0;
+  padding: 1.4rem 0;
+  border-top: 1px solid $rd-hairline;
+  &:last-child { border-bottom: 1px solid $rd-hairline; }
+}
+.rd-project__title {
+  margin: 0.15rem 0 0.4rem;
+  font-family: $sans-serif;       /* project titles are sans */
+  font-weight: 500;
+  font-size: 0.9375rem;           /* 15px */
+  color: $rd-ink;
+}
+.rd-project__desc { margin: 0; color: $rd-muted; font-size: 0.9375rem; line-height: 1.6; }
+
+/* --------------------------------------------------------------------------
+   CV / résumé cards + highlights strip
+   -------------------------------------------------------------------------- */
+.rd-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+
+  @include breakpoint(max-width $small) { grid-template-columns: 1fr; }
+}
+.rd-card {
+  display: block;
+  padding: 1.4rem 1.5rem;
+  background: #fff;
+  border: 1px solid $rd-hairline;
+  border-radius: $border-radius-card;
+  color: $rd-ink;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    border-color: $rd-accent;
+    box-shadow: 0 2px 10px rgba(107, 78, 113, 0.10);
+  }
+}
+.rd-card__icon { color: $rd-accent; font-size: 1.4rem; margin-bottom: 0.5rem; }
+.rd-card__title {
+  margin: 0 0 0.3rem;
+  font-family: $serif;
+  font-weight: 500;
+  font-size: 1.0625rem;
+  color: $rd-ink;
+}
+.rd-card__who  { margin: 0 0 0.6rem; color: $rd-muted; font-size: 0.9375rem; }
+.rd-card__meta { margin: 0 0 0.6rem; color: $rd-faint; font-size: 0.8125rem; }
+.rd-card__cta  { color: $rd-accent; font-size: 0.875rem; text-decoration: underline; text-underline-offset: 2px; }
+
+.rd-highlights {
+  margin: 1.75rem 0 0;
+  padding: 1.25rem 1.4rem;
+  background: $rd-accent-fill;
+  border-radius: $border-radius-card;
+  list-style: none;
+
+  li { margin: 0 0 0.55rem; font-size: 0.9375rem; color: $rd-ink; &:last-child { margin-bottom: 0; } }
+  .rd-highlights__label {
+    display: inline-block;
+    min-width: 5.5rem;
+    font-family: $sans-serif;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    color: $rd-accent;
+  }
+}

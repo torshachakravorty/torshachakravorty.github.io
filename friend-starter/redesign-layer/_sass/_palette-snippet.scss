@@ -1,0 +1,62 @@
+/* =====================================================================
+   REDESIGN PALETTE + WIRING  —  merge this into your _sass/_variables.scss
+   =====================================================================
+
+   HOW TO USE:
+   1. Open your own _sass/_variables.scss.
+   2. Find the "Colors" section (it already has $gray, $primary-color, etc.).
+   3. Paste the "palette tokens" block below into it.
+   4. Replace the existing assignments for the variables marked below
+      ($body-color, $text-color, $primary-color, $link-color, etc.) with
+      these versions so they point at the $rd-* tokens.
+   5. Also set the typography vars at the very bottom (serif headings).
+
+   TO CHANGE YOUR COLORS: edit ONLY the 9 hex values in the palette tokens
+   block. Everything else on the site re-themes automatically.
+
+   Pick your own palette. Keep it a LIGHT theme with ONE accent color for
+   the design to hold together. A good accent has ~4.5:1+ contrast on the
+   page background (check at https://webaim.org/resources/contrastchecker/).
+   --------------------------------------------------------------------- */
+
+
+/* ---- Redesign palette (light theme, single accent) ---- */
+/* These are the plum values from the original site — REPLACE with yours. */
+$rd-page-bg                 : #faf8f6; // page background (very light, near-white)
+$rd-ink                     : #221f24; // body text (near-black)
+$rd-muted                   : #56525c; // muted/secondary text
+$rd-faint                   : #8a8590; // faint text / meta / dates
+$rd-accent                  : #6b4e71; // YOUR ACCENT — links, rules, eyebrows
+$rd-accent-fill             : #efe9f1; // soft tint of the accent — pills, photo bg
+$rd-featured-tint           : #f6f1f7; // even softer accent tint — featured block
+$rd-pill-text               : #4a3550; // dark version of accent — text on accent-fill
+$rd-hairline                : rgba(0, 0, 0, 0.12); // thin border lines
+/* ------------------------------------------------------- */
+
+/* ---- Wiring: feed the tokens into Minimal Mistakes' own variables ---- */
+/* Replace MM's existing assignments for these with the lines below.      */
+$body-color                 : $rd-page-bg;
+$background-color           : $rd-page-bg;
+$text-color                 : $rd-ink;
+$muted-text-color           : $rd-muted;
+$border-color               : $rd-hairline;
+
+$primary-color              : $rd-accent;
+
+$link-color                 : $rd-accent;
+$link-color-hover           : mix(#000, $link-color, 25%);
+$link-color-visited         : $rd-accent;
+$masthead-link-color        : $rd-ink;
+$masthead-link-color-hover  : $rd-accent;
+
+/* ---- Typography: serif headings, sans body (fonts loaded in custom.html) ---- */
+/* Set these near the top of _variables.scss where $serif/$header-font-family live. */
+// $serif              : "Source Serif 4", Georgia, Times, serif;
+// $sans-serif         : "Inter", -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+// $monospace          : "JetBrains Mono", Monaco, Consolas, monospace;
+// $global-font-family : $sans-serif;   // body / UI
+// $header-font-family : $serif;        // headings / display
+// $caption-font-family: $serif;
+
+/* Also set, in the Borders section of _variables.scss: */
+// $border-radius      : 8px;   // redesign: 8px general, 12px cards

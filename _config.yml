@@ -105,6 +105,9 @@ include:
   - _pages
   - files
 exclude:
+  - friend-starter   # redesign kit / docs — not part of the built site
+  - Gemfile.dev      # local-only native-Jekyll Gemfile
+  - Gemfile.dev.lock
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

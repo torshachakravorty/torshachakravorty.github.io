@@ -5,15 +5,27 @@ permalink: /teaching_new/
 author_profile: false
 ---
 
-## Undergraduate Microeconomics
-* Teaching Assistant, Fall 2024 (Steve Levkoff)
-* Teaching Assistant, Spring 2024 (Melissa Famulari)
+<p class="rd-finding" style="margin-top:-0.5rem;">Teaching assistant for undergraduate economics courses at UC San Diego.</p>
 
-## Undergraduate Econometrics
-* Teaching Assistant, Spring 2023 (Gordon Dahl)
-
-## Economics of Discrimination
-* Teaching Assistant, Winter 2023 (Prashant Bharadwaj)
-
-## Cities & Inequality
-* Teaching Assistant, Summer 2023 (Fabian Eckert)
+<ul class="rd-paperlist">
+  <li>
+    <span class="rd-eyebrow">Undergraduate</span>
+    <p class="rd-paper-title">Microeconomics</p>
+    <p class="rd-finding">Teaching assistant, Fall 2024 (Steve Levkoff) and Spring 2024 (Melissa Famulari).</p>
+  </li>
+  <li>
+    <span class="rd-eyebrow">Undergraduate</span>
+    <p class="rd-paper-title">Econometrics</p>
+    <p class="rd-finding">Teaching assistant, Spring 2023 (Gordon Dahl).</p>
+  </li>
+  <li>
+    <span class="rd-eyebrow">Undergraduate</span>
+    <p class="rd-paper-title">Economics of Discrimination</p>
+    <p class="rd-finding">Teaching assistant, Winter 2023 (Prashant Bharadwaj).</p>
+  </li>
+  <li>
+    <span class="rd-eyebrow">Undergraduate</span>
+    <p class="rd-paper-title">Cities &amp; Inequality</p>
+    <p class="rd-finding">Teaching assistant, Summer 2023 (Fabian Eckert).</p>
+  </li>
+</ul>
