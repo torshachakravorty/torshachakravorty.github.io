@@ -231,6 +231,13 @@ defaults:
 sass:
   sass_dir: _sass
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  quiet_deps: true  # silence Dart Sass deprecation warnings from vendor/base partials (local-only; GitHub Pages ignores these keys)
+  silence_deprecations:
+    - import
+    - global-builtin
+    - slash-div
+    - if-function
+    - color-functions
 
 # Outputting
 permalink: /:categories/:title/

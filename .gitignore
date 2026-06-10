@@ -1,2 +1,9 @@
 _site/
 
+# Local build / dev artifacts (machine-specific — never commit)
+.bundle/
+.jekyll-cache/
+.jekyll-metadata
+
+# Atomic-write leftovers
+*.tmp.*
