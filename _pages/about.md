@@ -26,8 +26,7 @@ redirect_from:
 <hr class="rd-divider" />
 
 <div class="rd-about" markdown="1">
-I am a Ph.D. candidate in Economics at UC San Diego. My research is in development
-and public economics — I study informal markets, state capacity, and the delivery
+I am a Ph.D. candidate in Economics at UC San Diego. I study informal markets, state capacity, and the delivery
 of public services in settings where the state is weak, often using confidential
 administrative data. Before UC San Diego, I earned an M.A. in Economics at the
 Madras School of Economics and a B.Sc. in Economics at the University of Calcutta.
