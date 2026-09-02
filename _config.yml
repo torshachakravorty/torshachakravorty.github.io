@@ -98,7 +98,7 @@ author:
       url: "https://economics.ucsd.edu/graduate-program/about/grad-profiles/cohort%202021/Chakravorty-torsha.html"
     - label: "CV"
       icon: "fas fa-fw fa-file-pdf"
-      url: "https://github.com/torshachakravorty/CV/blob/main/chakravorty_cv.pdf"
+      url: "/files/Torsha-Chakravorty-CV.pdf"
 # Reading Files
 include:
   - .htaccess

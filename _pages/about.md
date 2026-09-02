@@ -26,10 +26,7 @@ redirect_from:
 <hr class="rd-divider" />
 
 <div class="rd-about" markdown="1">
-I am a Ph.D. candidate in Economics at UC San Diego. I study informal markets, state capacity, and the delivery
-of public services in settings where the state is weak, often using confidential
-administrative data. Before UC San Diego, I earned an M.A. in Economics at the
-Madras School of Economics and a B.Sc. in Economics at the University of Calcutta.
+I am a PhD candidate in Economics at UC San Diego. Much of my work studies state capacity building - how governments allocate scarce resources, how citizens adapt to bureaucratic bottlenecks, and how informal markets emerge around them. To study these questions, I combine large-scale administrative data with causal inference and economic modeling.
 </div>
 
 <div class="rd-cols">
@@ -38,7 +35,7 @@ Madras School of Economics and a B.Sc. in Economics at the University of Calcutt
     <h2 class="rd-subhead">Selected research</h2>
     <span class="rd-eyebrow">Working paper</span>
     <p class="rd-paper-title">Brokers in public service delivery</p>
-    <p class="rd-finding">How brokers shape the delivery of public services where state capacity is weak — and how the broker premium responds as capacity grows.</p>
+    <p class="rd-finding">Understanding informal markets around public services and how they adapt to state capacity expansions.</p>
 
     <p class="rd-paper-title" style="margin-top:1.25rem;">Highways and Innovation in India</p>
     <p class="rd-finding">With Ishani Chatterjee. Road access, patenting, and the spatial spread of firms and institutions across Indian districts.</p>
