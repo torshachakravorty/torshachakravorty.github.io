@@ -7,7 +7,8 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Home"
+title                    : "Torsha Chakravorty"
+masthead_title           : "Home"   # label for the leftmost nav link only
 title_separator          : "-"
 name                     : &name "Torsha Chakravorty"
 description              : &description "Economics Phd Student @UCSD"

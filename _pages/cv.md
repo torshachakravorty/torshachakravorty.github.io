@@ -7,19 +7,20 @@ redirect_from:
   - /resume
 ---
 
-<p class="rd-finding" style="margin-top:-0.5rem;"></p>
+<ul class="rd-linkrow" style="margin-top:-0.25rem;">
+  <li><a href="{{ '/files/Torsha-Chakravorty-CV.pdf' | relative_url }}" target="_blank" rel="noopener">Open in a new tab ↗</a></li>
+  <li><a href="{{ '/files/Torsha-Chakravorty-CV.pdf' | relative_url }}" download>Download PDF</a></li>
+</ul>
 
-<div class="rd-cards">
-
-  <div class="rd-card">
-    <p class="rd-card__title"></p>
-    <p class="rd-card__who">You can find my CV below.</p>
-    <p class="rd-card__meta"></p>
-    <a class="rd-card__cta" href="{{ '/files/Torsha-Chakravorty-CV.pdf' | relative_url }}" target="_blank" rel="noopener">View ↗</a>
-    &nbsp;·&nbsp;
-    <a class="rd-card__cta" href="{{ '/files/Torsha-Chakravorty-CV.pdf' | relative_url }}" download>Download</a>
-  </div>
-
+<!-- Inline PDF viewer. Desktop browsers render the CV here directly.
+     Most phones cannot, and will show the fallback link instead. -->
+<div class="rd-pdf">
+  <object class="rd-pdf__frame"
+          data="{{ '/files/Torsha-Chakravorty-CV.pdf' | relative_url }}"
+          type="application/pdf">
+    <p class="rd-pdf__fallback">
+      Your browser can’t display the PDF on this page.
+      <a href="{{ '/files/Torsha-Chakravorty-CV.pdf' | relative_url }}">Download my CV instead</a>.
+    </p>
+  </object>
 </div>
-
-

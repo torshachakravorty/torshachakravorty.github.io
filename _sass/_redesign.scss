@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
    use a centred reading-width column instead. Pages that DO render a
    sidebar keep the theme layout untouched (content is not :first-child).
    -------------------------------------------------------------------------- */
-$rd-content-max: 88rem;   /* ~1408px hard ceiling so prose never runs absurdly wide */
+$rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content and footer all follow this */
 
 /* Fluid width: fill the viewport minus a comfortable side gutter, up to a cap.
    No fixed pixel column, so it fills any screen size on its own. */
@@ -220,18 +220,32 @@ $rd-content-max: 88rem;   /* ~1408px hard ceiling so prose never runs absurdly w
 /* --------------------------------------------------------------------------
    Home — hero + two columns
    -------------------------------------------------------------------------- */
-/* Centered vertical stack: photo → name → positioning line → links. */
+/* Two columns: photo on the left, text on the right.
+   Stacks back to a centred single column on phones (below 768px). */
 .rd-hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 300px auto;  /* photo column, then text hugs its own width */
+  justify-content: center;            /* centre the photo+text pair in the page */
+  gap: 2.5rem;                        /* space between photo and text */
+  align-items: center;                /* vertically centre text against the photo */
+  text-align: left;
   margin: 1rem 0 2rem;
+
+  @include breakpoint(max-width $medium) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    justify-items: center;
+    text-align: center;
+  }
 }
 .rd-hero__photo {
-  width: 300px;
+  width: 300px;             /* unchanged - same size as before */
   aspect-ratio: 1 / 1.18;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;         /* the grid gap handles spacing now */
+}
+/* Right-hand column wrapper: name, tagline, short intro, links. */
+.rd-hero__text {
+  min-width: 0;             /* stops long words forcing the column wider */
 }
 .rd-hero__name {
   margin: 0 0 0.5rem;
@@ -242,16 +256,27 @@ $rd-content-max: 88rem;   /* ~1408px hard ceiling so prose never runs absurdly w
   color: $rd-ink;
 }
 .rd-hero__lede {
-  max-width: 46ch;          /* keep the positioning line from stretching full width */
-  margin: 0 auto;
+  max-width: 46ch;
+  margin: 0;                /* was "0 auto" - auto centred it; we want left */
   font-size: 1.25rem;       /* ~20px */
   line-height: 1.5;
   color: $rd-muted;
 }
-/* Center the link row within the centered hero. */
+/* Short intro paragraph beside the photo. The fuller bio stays below. */
+.rd-hero__intro {
+  max-width: 46ch;
+  margin: 0.9rem 0 0;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: $rd-ink;
+}
 .rd-hero .rd-linkrow {
-  justify-content: center;
+  justify-content: flex-start;   /* was "center" */
   margin-top: 1.25rem;
+
+  @include breakpoint(max-width $medium) {
+    justify-content: center;
+  }
 }
 .rd-about {
   margin: 0 0 0.5rem;
@@ -467,4 +492,31 @@ $rd-content-max: 88rem;   /* ~1408px hard ceiling so prose never runs absurdly w
     text-underline-offset: 2px;
   }
   a:hover { color: mix(#000, $rd-accent, 22%); }
+}
+
+/* --------------------------------------------------------------------------
+   Inline PDF viewer (CV page)
+   -------------------------------------------------------------------------- */
+.rd-pdf {
+  margin: 1.5rem 0 0;
+  border: 1px solid $rd-hairline;
+  border-radius: $border-radius-card;
+  overflow: hidden;
+  background: $rd-accent-fill;
+}
+.rd-pdf__frame {
+  display: block;
+  width: 100%;
+  height: 900px;
+
+  @include breakpoint(max-width $medium) {
+    height: 60vh;
+  }
+}
+.rd-pdf__fallback {
+  margin: 0;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: $rd-muted;
+  font-size: 0.9375rem;
 }

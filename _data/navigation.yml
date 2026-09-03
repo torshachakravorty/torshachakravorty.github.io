@@ -1,4 +1,9 @@
 # main links
+# Order here = order in the menu bar. To hide a tab, put a # at the
+# start of each of its two lines rather than deleting them.
+#
+# >>> BEFORE GOING LIVE: the Code page still has placeholder text.
+#     To hide that tab, put a # in front of its two lines below.
 main:
   - title: "Research"
     url: /research/
@@ -6,5 +11,11 @@ main:
   - title: "Teaching"
     url: /teaching/
 
+  - title: "Code"
+    url: /code/
+
   - title: "CV"
     url: /cv/
+
+  - title: "Contact"
+    url: /contact/
