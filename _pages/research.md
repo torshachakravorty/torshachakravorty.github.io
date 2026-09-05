@@ -1,16 +1,16 @@
 ---
 layout: archive
-title: "Research"
+title: "Selected Research"
 permalink: /research/
 author_profile: false
 ---
 
-<p class="rd-meta" style="margin-top:-0.5rem;">Development economics · Public economics · State capacity · India</p>
+<p class="rd-meta" style="margin-top:-0.5rem;"></p>
 
 <div class="rd-featured">
-  <span class="rd-eyebrow">Working paper</span>
+  <span class="rd-eyebrow">Job market paper</span>
   <p class="rd-paper-title">Brokers in public service delivery</p>
-  <p class="rd-coauthors"><span class="rd-reslinks__state">Ongoing · Walter Heller Memorial Prize (Best Third-Year Paper), 2024</span></p>
+  <p class="rd-coauthors"><span class="rd-reslinks__state">Ongoing · Walter Heller Memorial Prize, 2024</span></p>
   <p class="rd-finding">Brokers can speed up public service delivery where the state is weak — but that advantage erodes as state capacity grows.</p>
 
   <ul class="rd-reslinks">
