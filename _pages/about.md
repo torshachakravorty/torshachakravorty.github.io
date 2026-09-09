@@ -13,7 +13,7 @@ redirect_from:
        TO CHANGE THE PICTURE: drop your new image file into the images/
        folder, then replace 'profile.jpeg' below with its filename. -->
   <div class="rd-hero__photo rd-photo">
-    <img src="{{ '/images/profile.jpeg' | relative_url }}"
+    <img src="{{ '/images/profile-web.jpg' | relative_url }}"
          alt="Torsha Chakravorty, Ph.D. candidate in Economics at UC San Diego." />
   </div>
 
