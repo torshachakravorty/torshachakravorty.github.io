@@ -12,7 +12,6 @@ author_profile: false
   <li>
     <span class="rd-eyebrow">Summer 2026</span>
     <p class="rd-paper-title">Introduction to Social Data Analytics</p>
-    <p class="rd-finding">This undergraduate summer course aimed to (i) introduce social science questions to students with no prior experience, (ii) use real data and statistical methods for analysis, (iii) write pseudo-code, and (iv) communicate analyzed data </p>
     <ul class="rd-reslinks">
       <li><a href="https://github.com/torshachakravorty/social-data-analytics/blob/main/syllabus.pdf" target="_blank" rel="noopener">Syllabus &#8599;</a></li>
       <li><a href="https://github.com/torshachakravorty/social-data-analytics/tree/main/slides" target="_blank" rel="noopener">Slides &#8599;</a></li>
