@@ -529,3 +529,12 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
 /* Extra breathing room when one section follows another. */
 .rd-paperlist + .rd-subhead,
 .rd-projects + .rd-subhead { margin-top: 2rem; }
+
+/* The centred nav can run underneath the overflow (hamburger) button on narrow
+   screens, because the theme's greedy-nav script assumes left-aligned links.
+   Reserve room for the button ONLY while it is actually showing - the theme
+   puts .hidden on it whenever every link fits. The button is absolutely
+   positioned against the padding box, so this shifts the links, not the button. */
+.greedy-nav:has(button:not(.hidden)) {
+  padding-right: 3.75rem;
+}
