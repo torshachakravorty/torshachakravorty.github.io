@@ -21,7 +21,7 @@ redirect_from:
   <div class="rd-hero__text">
     <h1 class="rd-hero__name">Torsha Chakravorty</h1>
     <p class="rd-hero__lede">Ph.D. candidate in Economics at UC San Diego.</p>
-    <p class="rd-hero__intro">Welcome to my website. I am on the economics job market in 2026-2027. I am curious about how states build capacity given scarce resources, and the gap between de jure and de facto access to public services.</p>
+    <p class="rd-hero__intro">Welcome to my website.<br>I am on the job market in 2026-2027.</p>
     <ul class="rd-linkrow">
       <li><a href="{{ '/cv/' | relative_url }}">CV</a></li>
       <li><a href="https://github.com/torshachakravorty">GitHub</a></li>
