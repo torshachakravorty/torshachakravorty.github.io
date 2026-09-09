@@ -7,3 +7,5 @@ _site/
 
 # Atomic-write leftovers
 *.tmp.*
+# Files downloaded from the Claude conversation — not part of the site
+Claude outputs/

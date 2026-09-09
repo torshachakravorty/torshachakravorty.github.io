@@ -107,6 +107,17 @@ include:
   - files
 exclude:
   - friend-starter   # redesign kit / docs — not part of the built site
+  - _archive_claude  # things moved aside, never published
+  - "Claude outputs"  # downloads from chat — not part of the site
+  - markdown_generator
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
+  - serve.sh
+  - package.json
+  - README.md
+  - CHANGELOG.md
+  - CONTRIBUTING.md
   - Gemfile.dev      # local-only native-Jekyll Gemfile
   - Gemfile.dev.lock
   - "*.sublime-project"
@@ -158,18 +169,21 @@ kramdown:
 
 # Collections
 collections:
+  # Demo collections from the AcademicPages template. Their example entries
+  # were moved to _archive_claude/collections/. output:false keeps them from
+  # publishing if a file is ever dropped back in. Set true to re-enable.
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
     link: false
 #  publications:
 #    output: true
 #    permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 # Defaults

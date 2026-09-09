@@ -11,8 +11,8 @@ main:
   - title: "Teaching"
     url: /teaching/
 
-  - title: "Code"
-    url: /code/
+  # - title: "Code"          <- remove the two # to bring the Code tab back
+  #   url: /code/
 
   - title: "CV"
     url: /cv/

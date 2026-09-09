@@ -6,8 +6,6 @@ permalink: /teaching/
 author_profile: false
 ---
 
-<p class="rd-finding" style="margin-top:-0.5rem;">Undergraduate teaching at UC San Diego.</p>
-
 <h2 class="rd-subhead">Instructor of record</h2>
 
 <ul class="rd-paperlist">
