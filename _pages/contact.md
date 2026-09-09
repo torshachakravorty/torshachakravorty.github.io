@@ -12,6 +12,7 @@ author_profile: false
   <li>
     <span class="rd-eyebrow">Email</span>
     <p class="rd-paper-title"><a href="mailto:tchakravorty@ucsd.edu">tchakravorty@ucsd.edu</a></p>
+    <p class="rd-coauthors"><a href="mailto:torshachakravorty@gmail.com">torshachakravorty@gmail.com</a></p>
   </li>
 
   <li>

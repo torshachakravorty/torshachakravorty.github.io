@@ -21,7 +21,7 @@ redirect_from:
   <div class="rd-hero__text">
     <h1 class="rd-hero__name">Torsha Chakravorty</h1>
     <p class="rd-hero__lede">Ph.D. candidate in Economics at UC San Diego.</p>
-    <p class="rd-hero__intro">Hi! Welcome to my website. I am on the job market in 2026-2027. I am curious about how states build capacity given scarce resources, and the gap between de jure and de facto access to public services.</p>
+    <p class="rd-hero__intro">Welcome to my website. I am on the economics job market in 2026-2027. I am curious about how states build capacity given scarce resources, and the gap between de jure and de facto access to public services.</p>
     <ul class="rd-linkrow">
       <li><a href="{{ '/cv/' | relative_url }}">CV</a></li>
       <li><a href="https://github.com/torshachakravorty">GitHub</a></li>
@@ -35,5 +35,5 @@ redirect_from:
 <hr class="rd-divider" />
 
 <div class="rd-about" markdown="1">
-My job market paper studies informal markets that grow with and adapt around bureaucracies. I work with large (confidential and public) administrative datasets that governments routinely create in the course of doing their work. 
+
 </div>
