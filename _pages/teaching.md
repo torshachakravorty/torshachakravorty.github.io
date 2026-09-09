@@ -30,7 +30,10 @@ author_profile: false
   <li>
     <span class="rd-eyebrow">Winter 2025 &middot; Summer 2025 &middot; Winter 2026</span>
     <p class="rd-paper-title">Machine Learning in Economics &amp; Business Forecasting</p>
-    <p class="rd-coauthors">[instructor name(s)]</p>
+    <p class="rd-coauthors">Ying Zhu</p>
+    <ul class="rd-reslinks">
+      <li><a href="https://github.com/torshachakravorty/ml-economics-discussion" target="_blank" rel="noopener">Discussion materials &#8599;</a></li>
+    </ul>
   </li>
 
   <li>
