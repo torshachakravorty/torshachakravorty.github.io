@@ -520,3 +520,8 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   color: $rd-muted;
   font-size: 0.9375rem;
 }
+
+/* A subhead already draws its own rule; drop the list's top border when the
+   list follows one directly, so the two lines don't stack up. */
+.rd-subhead + .rd-paperlist > li:first-child,
+.rd-subhead + .rd-projects > li:first-child { border-top: 0; padding-top: 0.25rem; }

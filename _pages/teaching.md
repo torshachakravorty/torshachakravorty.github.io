@@ -1,5 +1,6 @@
 ---
 title: "Teaching"
+hide_title: true   # keeps the browser-tab title, hides the on-page heading
 layout: single
 permalink: /teaching/
 author_profile: false
@@ -15,9 +16,9 @@ author_profile: false
     <p class="rd-paper-title">Introduction to Social Data Analytics</p>
     <p class="rd-finding">[One or two sentences: what the course covered and who it was for.]</p>
     <ul class="rd-reslinks">
-      <li><a href="{{ '/files/syllabus-social-data-analytics.pdf' | relative_url }}">Syllabus</a></li>
-      <li><a href="{{ '/files/slides-social-data-analytics.pdf' | relative_url }}">Slides</a></li>
-      <li><a href="{{ '/files/evaluations-social-data-analytics.pdf' | relative_url }}">Evaluations</a></li>
+      <li><a href="https://github.com/torshachakravorty/social-data-analytics/blob/main/syllabus.pdf" target="_blank" rel="noopener">Syllabus &#8599;</a></li>
+      <li><a href="https://github.com/torshachakravorty/social-data-analytics/tree/main/slides" target="_blank" rel="noopener">Slides &#8599;</a></li>
+      <li><a href="https://github.com/torshachakravorty/social-data-analytics/blob/main/evaluations.pdf" target="_blank" rel="noopener">Evaluations &#8599;</a></li>
     </ul>
   </li>
 </ul>
