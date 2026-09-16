@@ -25,7 +25,7 @@ redirect_from:
     <ul class="rd-linkrow">
       <li><a href="{{ '/cv/' | relative_url }}">CV</a></li>
       <li><a href="https://github.com/torshachakravorty">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/torsha-chakravorty-460138152/">LinkedIn</a></li>
+      <li><a href="https://www.linkedin.com/in/torsha-chakravorty/">LinkedIn</a></li>
       <li><a href="mailto:tchakravorty@ucsd.edu">Email</a></li>
     </ul>
   </div>

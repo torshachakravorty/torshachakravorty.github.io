@@ -22,7 +22,7 @@ author_profile: false
 
   <li>
     <span class="rd-eyebrow">LinkedIn</span>
-    <p class="rd-paper-title"><a href="https://www.linkedin.com/in/torsha-chakravorty-460138152/" target="_blank" rel="noopener">Torsha Chakravorty ↗</a></p>
+    <p class="rd-paper-title"><a href="https://www.linkedin.com/in/torsha-chakravorty/" target="_blank" rel="noopener">Torsha Chakravorty ↗</a></p>
   </li>
 
 </ul>

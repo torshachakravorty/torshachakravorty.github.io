@@ -224,7 +224,7 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
    Stacks back to a centred single column on phones (below 768px). */
 .rd-hero {
   display: grid;
-  grid-template-columns: 300px auto;  /* photo column, then text hugs its own width */
+  grid-template-columns: 250px auto;  /* photo column, then text hugs its own width */
   justify-content: center;            /* centre the photo+text pair in the page */
   gap: 2.5rem;                        /* space between photo and text */
   align-items: center;                /* vertically centre text against the photo */
@@ -239,7 +239,7 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   }
 }
 .rd-hero__photo {
-  width: 300px;             /* unchanged - same size as before */
+  width: 250px;             /* photo width - change here AND in grid-template-columns above */
   aspect-ratio: 1 / 1.45;
   margin-bottom: 0;         /* the grid gap handles spacing now */
 }
