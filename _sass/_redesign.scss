@@ -8,6 +8,19 @@
    Global tone overrides
    -------------------------------------------------------------------------- */
 
+/* --------------------------------------------------------------------------
+   TYPE SCALE - every text size on the site comes from these seven steps.
+   Change a number here and it updates everywhere that uses that step.
+   Each step is roughly 13% larger than the one below it.
+   -------------------------------------------------------------------------- */
+$rd-size-display : 2rem;       /* 32px - your name in the hero                */
+$rd-size-lede    : 1.25rem;    /* 20px - the tagline under it                 */
+$rd-size-title   : 1.125rem;   /* 18px - names of papers, projects, CV cards  */
+$rd-size-body    : 1.0625rem;  /* 17px - prose and section headings           */
+$rd-size-small   : 0.9375rem;  /* 15px - secondary text, link rows            */
+$rd-size-meta    : 0.8125rem;  /* 13px - co-authors, dates, footer, tags      */
+$rd-size-label   : 0.6875rem;  /* 11px - the small uppercase eyebrow labels   */
+
 body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -27,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 .archive__subtitle {
   font-family: $serif;
   font-weight: 500;
-  font-size: 1.625rem;   /* ~26px */
+  font-size: $rd-size-lede;   /* ~26px */
   letter-spacing: -0.01em;
   color: $rd-ink;
 }
@@ -37,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 .archive {
   p, li {
     color: $rd-ink;
-    font-size: 1.0625rem;     /* ~17px */
+    font-size: $rd-size-body;     /* ~17px */
     line-height: 1.7;
   }
 }
@@ -120,7 +133,7 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   display: inline-block;
   margin: 0 0 0.5em;
   font-family: $sans-serif;
-  font-size: 0.6875rem;     /* 11px */
+  font-size: $rd-size-label;     /* 11px */
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.13em;
@@ -132,15 +145,15 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   margin: 0 0 1rem;
   padding-bottom: 0.4rem;
   font-family: $serif;
-  font-size: 1rem;          /* 16px */
+  font-size: $rd-size-body;          /* 16px */
   font-weight: 500;
   color: $rd-ink;
   border-bottom: 1px solid $rd-hairline;
 }
 
-.rd-meta   { font-size: 0.8125rem; color: $rd-faint; }   /* 13px */
+.rd-meta   { font-size: $rd-size-meta; color: $rd-faint; }   /* 13px */
 .rd-muted  { color: $rd-muted; }
-.rd-finding { color: $rd-muted; font-size: 0.9375rem; line-height: 1.6; }
+.rd-finding { color: $rd-muted; font-size: $rd-size-small; line-height: 1.6; }
 
 .rd-divider {
   border: 0;
@@ -161,7 +174,7 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   display: inline-block;
   padding: 0.18rem 0.6rem;
   font-family: $sans-serif;
-  font-size: 0.75rem;
+  font-size: $rd-size-meta;
   line-height: 1.4;
   color: $rd-pill-text;
   background: $rd-accent-fill;
@@ -177,7 +190,7 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   margin: 1rem 0 0;
   padding: 0;
   list-style: none;
-  font-size: 0.9375rem;
+  font-size: $rd-size-small;
 
   li { margin: 0; }
   a  { color: $rd-accent; text-decoration: underline; text-underline-offset: 2px; }
@@ -192,7 +205,7 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   margin: 0.75rem 0 0;
   padding: 0;
   list-style: none;
-  font-size: 0.8125rem;
+  font-size: $rd-size-meta;
 
   li { margin: 0; }
   a  { color: $rd-accent; text-decoration: underline; text-underline-offset: 2px; }
@@ -251,14 +264,14 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   margin: 0 0 0.5rem;
   font-family: $serif;
   font-weight: 500;
-  font-size: 2rem;          /* ~32px */
+  font-size: $rd-size-display;          /* ~32px */
   line-height: 1.15;
   color: $rd-ink;
 }
 .rd-hero__lede {
   max-width: 46ch;
   margin: 0;                /* was "0 auto" - auto centred it; we want left */
-  font-size: 1.25rem;       /* ~20px */
+  font-size: $rd-size-lede;       /* ~20px */
   line-height: 1.5;
   color: $rd-muted;
 }
@@ -266,7 +279,7 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
 .rd-hero__intro {
   max-width: 46ch;
   margin: 0.9rem 0 0;
-  font-size: 1rem;
+  font-size: $rd-size-body;
   line-height: 1.65;
   color: $rd-ink;
 }
@@ -280,7 +293,7 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
 }
 .rd-about {
   margin: 0 0 0.5rem;
-  p { color: $rd-ink; font-size: 1.125rem; line-height: 1.75; }
+  p { color: $rd-ink; font-size: $rd-size-body; line-height: 1.75; }
 }
 
 .rd-cols {
@@ -309,11 +322,11 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   margin: 0.15rem 0 0.5rem;
   font-family: $serif;
   font-weight: 500;
-  font-size: 1rem;          /* 15–16px */
+  font-size: $rd-size-title;          /* 15–16px */
   line-height: 1.35;
   color: $rd-ink;
 }
-.rd-coauthors { font-size: 0.8125rem; color: $rd-faint; margin: 0 0 0.35rem; }
+.rd-coauthors { font-size: $rd-size-meta; color: $rd-faint; margin: 0 0 0.35rem; }
 
 /* Working papers / WIP list */
 .rd-paperlist { margin: 0; padding: 0; list-style: none; }
@@ -338,7 +351,7 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   background: none;
   cursor: pointer;
   font-family: $sans-serif;
-  font-size: 0.8125rem;
+  font-size: $rd-size-meta;
   color: $rd-accent;
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -365,7 +378,7 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   background: rgba(255, 255, 255, 0.55);
   border: 1px solid $rd-hairline;
   border-radius: $border-radius;
-  font-size: 0.9375rem;
+  font-size: $rd-size-small;
   line-height: 1.6;
   color: $rd-muted;
 
@@ -385,12 +398,12 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
 }
 .rd-project__title {
   margin: 0.15rem 0 0.4rem;
-  font-family: $sans-serif;       /* project titles are sans */
+  font-family: $serif;       /* project titles are sans */
   font-weight: 500;
-  font-size: 0.9375rem;           /* 15px */
+  font-size: $rd-size-title;           /* 15px */
   color: $rd-ink;
 }
-.rd-project__desc { margin: 0; color: $rd-muted; font-size: 0.9375rem; line-height: 1.6; }
+.rd-project__desc { margin: 0; color: $rd-muted; font-size: $rd-size-small; line-height: 1.6; }
 
 /* --------------------------------------------------------------------------
    CV / résumé cards + highlights strip
@@ -422,12 +435,12 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   margin: 0 0 0.3rem;
   font-family: $serif;
   font-weight: 500;
-  font-size: 1.0625rem;
+  font-size: $rd-size-title;
   color: $rd-ink;
 }
-.rd-card__who  { margin: 0 0 0.6rem; color: $rd-muted; font-size: 0.9375rem; }
-.rd-card__meta { margin: 0 0 0.6rem; color: $rd-faint; font-size: 0.8125rem; }
-.rd-card__cta  { color: $rd-accent; font-size: 0.875rem; text-decoration: underline; text-underline-offset: 2px; }
+.rd-card__who  { margin: 0 0 0.6rem; color: $rd-muted; font-size: $rd-size-small; }
+.rd-card__meta { margin: 0 0 0.6rem; color: $rd-faint; font-size: $rd-size-meta; }
+.rd-card__cta  { color: $rd-accent; font-size: $rd-size-small; text-decoration: underline; text-underline-offset: 2px; }
 
 .rd-highlights {
   margin: 1.75rem 0 0;
@@ -436,7 +449,7 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   border-radius: $border-radius-card;
   list-style: none;
 
-  li { margin: 0 0 0.55rem; font-size: 0.9375rem; color: $rd-ink; &:last-child { margin-bottom: 0; } }
+  li { margin: 0 0 0.55rem; font-size: $rd-size-small; color: $rd-ink; &:last-child { margin-bottom: 0; } }
   .rd-highlights__label {
     display: inline-block;
     min-width: 5.5rem;
@@ -472,7 +485,7 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
 .rd-footer__copyright {
   margin: 0 0 0.5rem;
   font-family: $sans-serif;
-  font-size: 0.8125rem;     /* 13px */
+  font-size: $rd-size-meta;     /* 13px */
   color: $rd-faint;
 }
 
@@ -483,7 +496,7 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 0.875rem;
+  font-size: $rd-size-meta;
 
   li { margin: 0; padding: 0; }
   a {
@@ -518,7 +531,7 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   padding: 2rem 1.5rem;
   text-align: center;
   color: $rd-muted;
-  font-size: 0.9375rem;
+  font-size: $rd-size-small;
 }
 
 /* A subhead already draws its own rule; drop the list's top border when the
