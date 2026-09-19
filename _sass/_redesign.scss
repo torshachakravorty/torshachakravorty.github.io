@@ -551,3 +551,36 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
 .greedy-nav:has(button:not(.hidden)) {
   padding-right: 3.75rem;
 }
+
+/* --------------------------------------------------------------------------
+   MAKE THE TYPE SCALE ACTUALLY APPLY
+
+   Minimal Mistakes sets:
+       .page__content p, .page__content li, .archive p, .archive li
+           { font-size: 1.0625rem }
+   That selector is a class PLUS an element, which outranks a bare class - so
+   every .rd-* size on a <p> or <li> was being flattened to body size.
+   Naming the element here makes the specificity equal, and this file is
+   imported last (see assets/css/main.scss), so these win.
+
+   If you add a new .rd-* class to a <p> or <li>, add it here too.
+   -------------------------------------------------------------------------- */
+p.rd-hero__lede      { font-size: $rd-size-lede; }
+p.rd-hero__intro     { font-size: $rd-size-body; }
+
+p.rd-paper-title     { font-size: $rd-size-title; }
+p.rd-project__title  { font-size: $rd-size-title; }
+p.rd-card__title     { font-size: $rd-size-title; }
+
+p.rd-finding         { font-size: $rd-size-small; }
+p.rd-project__desc   { font-size: $rd-size-small; }
+p.rd-card__who       { font-size: $rd-size-small; }
+p.rd-pdf__fallback   { font-size: $rd-size-small; }
+.rd-abs-body p       { font-size: $rd-size-small; }
+.rd-linkrow li       { font-size: $rd-size-small; }
+
+p.rd-coauthors       { font-size: $rd-size-meta; }
+p.rd-card__meta      { font-size: $rd-size-meta; }
+p.rd-meta            { font-size: $rd-size-meta; }
+.rd-reslinks li      { font-size: $rd-size-meta; }
+li.rd-pill           { font-size: $rd-size-meta; }
