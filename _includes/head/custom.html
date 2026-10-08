@@ -21,13 +21,13 @@
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="msapplication-TileImage" content="{{ base_path }}/images/mstile-144x144.png?v=M44lzPylqQ">
 <meta name="msapplication-config" content="{{ base_path }}/images/browserconfig.xml?v=M44lzPylqQ">
-<meta name="theme-color" content="#faf8f6">
+<meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
-<!-- Redesign webfonts: Source Serif 4 (display/serif), Inter (body/UI), JetBrains Mono (rare) -->
+<!-- Webfont: Inter for the whole site, regular (400) and medium (500). Source Serif 4 removed 2026-10-07. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap">
 
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
 <script type="text/x-mathjax-config">
@@ -56,6 +56,23 @@
       var opened = btn.getAttribute("data-label-open");
       var closed = btn.getAttribute("data-label-closed");
       if (opened && closed) { label.textContent = open ? closed : opened; }
+    }
+  });
+</script>
+
+<!-- Accessibility: links that open in a new tab say so to screen-reader users.
+     Adds hidden text "(opens in a new tab)" to every link with target="_blank",
+     unless its visible text already mentions a new tab. Nothing changes visually. -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var links = document.querySelectorAll('a[target="_blank"]');
+    for (var i = 0; i < links.length; i++) {
+      var a = links[i];
+      if (/new tab/i.test(a.textContent)) { continue; }
+      var note = document.createElement("span");
+      note.className = "screen-reader-text";
+      note.textContent = " (opens in a new tab)";
+      a.appendChild(note);
     }
   });
 </script>

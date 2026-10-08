@@ -5,6 +5,7 @@ permalink: /cv/
 author_profile: false
 redirect_from:
   - /resume
+description: "Curriculum vitae of Torsha Chakravorty, Ph.D. candidate in Economics at UC San Diego (UCSD)."
 ---
 
 <ul class="rd-linkrow" style="margin-top:-0.25rem;">

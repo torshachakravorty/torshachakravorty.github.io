@@ -13,8 +13,10 @@ $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
 /* system typefaces */
-/* Redesign: serif headings (Source Serif 4) + sans body (Inter); fonts loaded in _includes/head/custom.html */
-$serif                      : "Source Serif 4", Georgia, Times, serif;
+/* Whole site uses Inter (since 2026-10-07; headings used to be Source Serif 4).
+   $serif now points at Inter too, so every heading, title and your name follow.
+   Fonts are loaded in _includes/head/custom.html */
+$serif                      : "Inter", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $sans-serif                 : "Inter", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace                  : "JetBrains Mono", Monaco, Consolas, "Lucida Console", monospace;
 
@@ -58,11 +60,11 @@ $lighter-gray               : mix(#fff, $gray, 90%);
    TO RE-THEME THE WHOLE SITE: edit ONLY these 9 hex values. Everything else
    re-themes automatically. Keep it a light theme with one accent; verify the
    accent has >=4.5:1 contrast on $rd-page-bg (https://webaim.org/resources/contrastchecker/).
-   Current scheme: "ink blue" (accent ~7.4:1 on the page bg).                 */
-$rd-page-bg                 : #faf8f6; // page background (very light, near-white)
+   Current scheme: "ink blue" on pure white (accent ~8.8:1, faint grey ~5.6:1). */
+$rd-page-bg                 : #ffffff; // page background (pure white; was off-white #faf8f6 until 2026-10-07)
 $rd-ink                     : #221f24; // body text (near-black)
 $rd-muted                   : #56525c; // muted/secondary text
-$rd-faint                   : #8a8590; // faint text / meta / dates
+$rd-faint                   : #6b6672; // faint text / meta / dates (darkened from #8a8590 on 2026-10-07 to pass the 4.5:1 contrast standard)
 $rd-accent                  : #234e70; // ACCENT — links, rules, eyebrows
 $rd-accent-fill             : #e7edf3; // soft tint of the accent — pills, photo bg
 $rd-featured-tint           : #f0f4f8; // even softer accent tint — featured block

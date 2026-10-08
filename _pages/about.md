@@ -1,33 +1,35 @@
 ---
 permalink: /
-excerpt: "Torsha Chakravorty — Ph.D. candidate in Economics at UC San Diego"
 author_profile: false
 redirect_from:
   - /about/
   - /about.html
+description: "Torsha Chakravorty is a Ph.D. candidate in Economics at UC San Diego (UCSD), on the economics job market 2026-2027. Development and public economics."
 ---
 
 <div class="rd-hero">
 
-  <!-- LEFT: photo.
+  <!-- LEFT: photo, with your links centred underneath it.
        TO CHANGE THE PICTURE: drop your new image file into the images/
-       folder, then replace 'profile.jpeg' below with its filename. -->
-  <div class="rd-hero__photo rd-photo">
-    <img src="{{ '/images/profile-web.jpg' | relative_url }}"
-         alt="Torsha Chakravorty, Ph.D. candidate in Economics at UC San Diego." />
-  </div>
-
-  <!-- RIGHT: name, tagline, short intro, links. -->
-  <div class="rd-hero__text">
-    <h1 class="rd-hero__name">Torsha Chakravorty</h1>
-    <p class="rd-hero__lede">Ph.D. candidate in Economics at UC San Diego.</p>
-    <p class="rd-hero__intro">Welcome to my website.<br>I am on the job market in 2026-2027.</p>
+       folder, then replace 'profile-web.jpg' below with its filename. -->
+  <div class="rd-hero__left">
+    <div class="rd-hero__photo rd-photo">
+      <img src="{{ '/images/profile-web.jpg' | relative_url }}"
+           alt="Torsha Chakravorty, Ph.D. candidate in Economics at UC San Diego." />
+    </div>
     <ul class="rd-linkrow">
       <li><a href="{{ '/cv/' | relative_url }}">CV</a></li>
       <li><a href="https://github.com/torshachakravorty">GitHub</a></li>
       <li><a href="https://www.linkedin.com/in/torsha-chakravorty/">LinkedIn</a></li>
       <li><a href="mailto:tchakravorty@ucsd.edu">Email</a></li>
     </ul>
+  </div>
+
+  <!-- RIGHT: name, tagline, short intro. -->
+  <div class="rd-hero__text">
+    <h1 class="rd-hero__name">Torsha Chakravorty</h1>
+    <p class="rd-hero__lede">Ph.D. candidate in Economics at UC San Diego.</p>
+    <p class="rd-hero__intro">Welcome to my website.<br>I am a development and public economist.<br>I am on the job market in 2026-27.</p>
   </div>
 
 </div>

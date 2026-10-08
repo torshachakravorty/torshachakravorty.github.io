@@ -11,7 +11,7 @@ title                    : "Torsha Chakravorty"
 masthead_title           : "Home"   # label for the leftmost nav link only
 title_separator          : "-"
 name                     : &name "Torsha Chakravorty"
-description              : &description "Economics Phd Student @UCSD"
+description              : &description "Ph.D. candidate in Economics at UC San Diego (UCSD). Development and public economics: state capacity, public service delivery and informal markets in India."
 url                      : https://torshachakravorty.github.io  # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "torshachakravorty/torshachakravorty.github.io"
@@ -67,7 +67,7 @@ github           : "torshachakravorty"
 #   username               :
 #   app_id                 :
 #   publisher              :
-# og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "og-image.png"  # social preview card, in /images/
 
 # Analytics
 analytics:
@@ -83,7 +83,7 @@ author:
   location         : "San Diego, CA"
   email            : "tchakravorty-at-ucsd-dot-edu"
   github           : "torshachakravorty"
-  linkedin         : "torsha-chakravorty-460138152"
+  linkedin         : "torsha-chakravorty"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -93,7 +93,7 @@ author:
       url: "https://github.com/torshachakravorty"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/torsha-chakravorty-460138152/"
+      url: "https://www.linkedin.com/in/torsha-chakravorty/"
     - label: "PhD Program"
       icon: "fas fa-fw fa-university"
       url: "https://economics.ucsd.edu/graduate-program/about/grad-profiles/cohort%202021/Chakravorty-torsha.html"

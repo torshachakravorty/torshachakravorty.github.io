@@ -48,7 +48,10 @@
   <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
 {% endif %}
 
-{% if page.excerpt %}
+{% comment %} Description for Google and link previews, on every page.
+   Uses the page's own "description:" line, else the site description. {% endcomment %}
+{% if seo_description %}
+  <meta name="description" content="{{ seo_description }}">
   <meta property="og:description" content="{{ seo_description }}">
 {% endif %}
 
@@ -87,6 +90,9 @@
   <meta property="og:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endif %}">
 {% elsif page.header.overlay_image %}
   <meta property="og:image" content="{% if page.header.overlay_image contains "://" %}{{ page.header.overlay_image }}{% else %}{{ page.header.overlay_image | prepend: "/images/" | prepend: base_path }}{% endif %}">
+{% elsif site.og_image %}
+  {% comment %} Default link-preview card (LinkedIn, Slack...): og_image in _config.yml {% endcomment %}
+  <meta property="og:image" content="{{ site.og_image | prepend: "/images/" | prepend: base_path }}">
 {% endif %}
 
 {% if page.date %}
@@ -137,3 +143,31 @@
   <meta name="yandex-verification" content="{{ site.yandex_site_verification }}">
 {% endif %}
 <!-- end SEO -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Torsha Chakravorty",
+  "url": "{{ site.url }}",
+  "image": "{{ site.url }}/images/profile-web.jpg",
+  "jobTitle": "Ph.D. Candidate in Economics",
+  "email": "mailto:tchakravorty@ucsd.edu",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of California San Diego",
+    "alternateName": "UCSD",
+    "url": "https://economics.ucsd.edu/"
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Madras School of Economics" },
+    { "@type": "CollegeOrUniversity", "name": "University of Calcutta" }
+  ],
+  "knowsAbout": ["Development Economics", "Public Economics", "Applied Econometrics", "State Capacity"],
+  "sameAs": [
+    "https://github.com/torshachakravorty",
+    "https://www.linkedin.com/in/torsha-chakravorty/",
+    "https://economics.ucsd.edu/graduate-program/about/grad-profiles/cohort%202021/Chakravorty-torsha.html"
+  ]
+}
+</script>

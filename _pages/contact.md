@@ -3,6 +3,7 @@ layout: archive
 title: "Contact"
 permalink: /contact/
 author_profile: false
+description: "Contact Torsha Chakravorty, Ph.D. candidate in Economics at UC San Diego (UCSD)."
 ---
 
 <p class="rd-finding" style="margin-top:-0.5rem;">Email is the best way to reach me.</p>

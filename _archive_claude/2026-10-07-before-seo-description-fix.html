@@ -1,0 +1,11 @@
+<!-- Archived 2026-10-07 from _includes/seo.html: the description block BEFORE the fix.
+     It only output descriptions on pages with an excerpt (blog posts), so none of
+     the site's pages got one. Nothing here is published. -->
+
+{% if page.excerpt %}
+{% if seo_description %}
+  <meta name="description" content="{{ seo_description }}">
+{% endif %}
+
+  <meta property="og:description" content="{{ seo_description }}">
+{% endif %}

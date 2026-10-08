@@ -252,7 +252,7 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   }
 }
 .rd-hero__photo {
-  width: 250px;             /* photo width - change here AND in grid-template-columns above */
+  width: 250px;             /* photo width - change here, in grid-template-columns above, AND in .rd-hero__left below */
   aspect-ratio: 1 / 1.45;
   margin-bottom: 0;         /* the grid gap handles spacing now */
 }
@@ -283,13 +283,14 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   line-height: 1.65;
   color: $rd-ink;
 }
+/* Left-hand column: the photo with the CV / GitHub / LinkedIn / Email links
+   centred underneath it. Keep the width equal to the photo width. */
+.rd-hero__left {
+  width: 250px;
+}
 .rd-hero .rd-linkrow {
-  justify-content: flex-start;   /* was "center" */
-  margin-top: 1.25rem;
-
-  @include breakpoint(max-width $medium) {
-    justify-content: center;
-  }
+  justify-content: center;  /* centred under the photo */
+  margin-top: 1rem;
 }
 .rd-about {
   margin: 0 0 0.5rem;
@@ -325,6 +326,18 @@ $rd-content-max: 68rem;   /* ~1088px - comfortable reading measure; nav, content
   font-size: $rd-size-title;          /* 15–16px */
   line-height: 1.35;
   color: $rd-ink;
+}
+/* Paper and course titles are real headings (h2/h3) so screen-reader users can
+   jump between them. These lines stop the theme's heading styles changing how
+   they look, so they look exactly like ordinary title text. */
+.archive .rd-paper-title,
+.page__content .rd-paper-title {
+  margin: 0.15rem 0 0.5rem;
+  padding: 0;
+  border: 0;
+  font-size: $rd-size-title;
+  line-height: 1.35;
+  letter-spacing: normal;
 }
 .rd-coauthors { font-size: $rd-size-meta; color: $rd-faint; margin: 0 0 0.35rem; }
 

@@ -1,0 +1,6 @@
+<!-- Archived 2026-10-07 from _includes/seo.html: the og:image block BEFORE adding the
+     site-wide default card. Nothing here is published. -->
+
+{% elsif page.header.overlay_image %}
+  <meta property="og:image" content="{% if page.header.overlay_image contains "://" %}{{ page.header.overlay_image }}{% else %}{{ page.header.overlay_image | prepend: "/images/" | prepend: base_path }}{% endif %}">
+{% endif %}

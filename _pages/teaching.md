@@ -4,6 +4,7 @@ hide_title: true   # keeps the browser-tab title, hides the on-page heading
 layout: single
 permalink: /teaching/
 author_profile: false
+description: "Teaching by Torsha Chakravorty at UC San Diego (UCSD): instructor for Introduction to Social Data Analytics, and TA in econometrics and machine learning."
 ---
 
 <h2 class="rd-subhead">Instructor of record</h2>
@@ -11,7 +12,7 @@ author_profile: false
 <ul class="rd-paperlist">
   <li>
     <span class="rd-eyebrow">Summer 2026</span>
-    <p class="rd-paper-title">Introduction to Social Data Analytics</p>
+    <h3 class="rd-paper-title">Introduction to Social Data Analytics</h3>
     <ul class="rd-reslinks">
       <li><a href="https://github.com/torshachakravorty/social-data-analytics/blob/main/syllabus.pdf" target="_blank" rel="noopener">Syllabus &#8599;</a></li>
       <li><a href="https://github.com/torshachakravorty/social-data-analytics/tree/main/slides" target="_blank" rel="noopener">Slides &#8599;</a></li>
@@ -26,7 +27,7 @@ author_profile: false
 
   <li>
     <span class="rd-eyebrow">Winter 2025 &middot; Summer 2025 &middot; Winter 2026</span>
-    <p class="rd-paper-title">Machine Learning in Economics &amp; Business Forecasting</p>
+    <h3 class="rd-paper-title">Machine Learning in Economics &amp; Business Forecasting</h3>
     <p class="rd-coauthors">Taught by Ying Zhu</p>
     <ul class="rd-reslinks">
       <li><a href="https://github.com/torshachakravorty/ml-economics-discussion" target="_blank" rel="noopener">Discussion materials &#8599;</a></li>
@@ -35,25 +36,25 @@ author_profile: false
 
   <li>
     <span class="rd-eyebrow">Spring 2024 &middot; Fall 2024</span>
-    <p class="rd-paper-title">Microeconomics</p>
+    <h3 class="rd-paper-title">Microeconomics</h3>
     <p class="rd-coauthors">Taught by Melissa Famulari (Spring 2024) &middot; Steve Levkoff (Fall 2024)</p>
   </li>
 
   <li>
     <span class="rd-eyebrow">Winter 2023 &middot; Spring 2023 &middot; Fall 2023</span>
-    <p class="rd-paper-title">Undergraduate Econometrics</p>
+    <h3 class="rd-paper-title">Undergraduate Econometrics</h3>
     <p class="rd-coauthors">Taught by Gordon Dahl</p>
   </li>
 
   <li>
     <span class="rd-eyebrow">Summer 2023</span>
-    <p class="rd-paper-title">Cities &amp; Inequality</p>
+    <h3 class="rd-paper-title">Cities &amp; Inequality</h3>
     <p class="rd-coauthors">Taught by Fabian Eckert</p>
   </li>
 
   <li>
     <span class="rd-eyebrow">Summer 2022 &middot; Winter 2023</span>
-    <p class="rd-paper-title">Economics of Discrimination</p>
+    <h3 class="rd-paper-title">Economics of Discrimination</h3>
     <p class="rd-coauthors">Taught by Prashant Bharadwaj</p>
   </li>
 

@@ -3,28 +3,24 @@ layout: archive
 title: "Selected Research"
 permalink: /research/
 author_profile: false
+description: "Research by Torsha Chakravorty (UCSD Economics): state capacity, brokers in public service delivery in India, and highways and innovation."
 ---
 
 <p class="rd-meta" style="margin-top:-0.5rem;"></p>
 
 <div class="rd-featured">
   <span class="rd-eyebrow">Job market paper</span>
-  <p class="rd-paper-title">Building State Capacity in Stages: Brokers in public service delivery</p>
+  <h2 class="rd-paper-title">Building State Capacity in Stages: Brokers in Public Service Delivery</h2>
   <p class="rd-coauthors"><span class="rd-reslinks__state">With Parminder Pal Singh Sandhu · Walter Heller Memorial Prize (Best 3rd Year Paper)</span></p>
   <p class="rd-finding"></p>
 
   <ul class="rd-reslinks">
-    <li>
-      <button class="rd-abs-toggle" type="button" aria-expanded="false" aria-controls="abs-1"
-              data-label-open="Hide abstract" data-label-closed="Abstract">
-        <span class="rd-abs-toggle__label">Abstract</span>
-      </button>
-    </li>
-    <li><span class="rd-reslinks__state">Draft available on request</span></li>
+    <li><a href="{{ '/files/Torsha-Chakravorty-JMP.pdf' | relative_url }}" target="_blank" rel="noopener">Draft (frequently updated) &#8599;</a></li>
   </ul>
 
-  <div class="rd-abs-body" id="abs-1" hidden>
-    <p>Bureaucratic processes are often completed in sequential stages whose workers are not interchangeable. Thus, the ability of states to deliver services depends on capacity at each stage of the production process. This paper tests for spillovers when the state expands capacity in only one of multiple complementary production stages. We exploit plausibly exogenous district-level variation in government staffing for routine public service applications in a large Indian state. Contrary to general intuition, citizen use of informal brokers increased in districts receiving more new workers per capita. To complement the administrative data, we collect original survey data on broker fees to quantify the de facto costs citizens face. Because informal broker roles lack standard definition, we benchmark our empirical findings against multiple theoretical models of broker competition and citizen choice. We document new broker entry, show that broker value-added persists across non-expanded production stages, and demonstrate which market structures best account for the observed price and application dynamics. Our findings illustrate the importance of understanding the organization of informal markets in the process of building state capacity.</p>
+  <!-- JMP abstract is always shown (no button, no 'hidden'). -->
+  <div class="rd-abs-body" id="abs-1">
+    <p>Citizens need to establish eligibility for public benefits, and many pay private agents (brokers) to help obtain them. We study how this broker market responds when the government makes it easier to apply directly. A staffing reform in a large Indian state added workers who help submit applications, while leaving approving officials unchanged. Using pre-existing differences in district exposure to the reform, we find that a 1 percent staffing increase raises broker-mediated applications by 1.7 percent, compared to 1.1 percent for direct applications, and induces broker entry. Yet direct applications become faster, reducing brokers’ average speed advantage. These patterns rule out a model where public workers purely substitute for brokers and, under maintained assumptions, one where brokers only obtain priority from approvers. A model where public workers make brokers more productive can explain joint results. Our findings highlight the role of informal markets in building state capacity.</p>
   </div>
 </div>
 
@@ -32,7 +28,7 @@ author_profile: false
 
 <ul class="rd-paperlist">
   <li>
-    <p class="rd-paper-title">Highways and Innovation in India</p>
+    <h3 class="rd-paper-title">Highways and Innovation in India</h3>
     <p class="rd-coauthors"><span class="rd-reslinks__state">With Ishani Chatterjee</span></p>
     <p class="rd-finding"></p>
 
@@ -70,7 +66,7 @@ button AND the <div class="rd-abs-body"> block.
 ------------------------------------------------------------------
 
   <li>
-    <p class="rd-paper-title">PAPER TITLE</p>
+    <h3 class="rd-paper-title">PAPER TITLE</h3>
     <p class="rd-coauthors"><span class="rd-reslinks__state">With CO-AUTHOR &#183; STATUS</span></p>
     <p class="rd-finding">One plain sentence saying what you find.</p>
 

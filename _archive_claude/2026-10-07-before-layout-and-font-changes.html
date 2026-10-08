@@ -1,0 +1,62 @@
+<!-- Archived 2026-10-07: the versions of each block BEFORE the hero-links,
+     JMP-abstract and Inter-font changes. Nothing here is published. -->
+
+<!-- ===== Homepage hero (_pages/about.md) ===== -->
+  <!-- LEFT: photo.
+       TO CHANGE THE PICTURE: drop your new image file into the images/
+       folder, then replace 'profile.jpeg' below with its filename. -->
+  <div class="rd-hero__photo rd-photo">
+    <img src="{{ '/images/profile-web.jpg' | relative_url }}"
+         alt="Torsha Chakravorty, Ph.D. candidate in Economics at UC San Diego." />
+  </div>
+
+  <!-- RIGHT: name, tagline, short intro, links. -->
+  <div class="rd-hero__text">
+    <h1 class="rd-hero__name">Torsha Chakravorty</h1>
+    <p class="rd-hero__lede">Ph.D. candidate in Economics at UC San Diego.</p>
+    <p class="rd-hero__intro">Welcome to my website.<br>I am a development and public economist.<br>I am on the job market in 2026-27.</p>
+    <ul class="rd-linkrow">
+      <li><a href="{{ '/cv/' | relative_url }}">CV</a></li>
+      <li><a href="https://github.com/torshachakravorty">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/torsha-chakravorty/">LinkedIn</a></li>
+      <li><a href="mailto:tchakravorty@ucsd.edu">Email</a></li>
+    </ul>
+  </div>
+
+<!-- ===== Photo width comment (_sass/_redesign.scss) ===== -->
+  width: 250px;             /* photo width - change here AND in grid-template-columns above */
+
+<!-- ===== Hero link-row style (_sass/_redesign.scss) ===== -->
+.rd-hero .rd-linkrow {
+  justify-content: flex-start;   /* was "center" */
+  margin-top: 1.25rem;
+
+  @include breakpoint(max-width $medium) {
+    justify-content: center;
+  }
+}
+
+<!-- ===== JMP 'Abstract' button (_pages/research.md) - removed ===== -->
+    <li>
+      <button class="rd-abs-toggle" type="button" aria-expanded="false" aria-controls="abs-1"
+              data-label-open="Hide abstract" data-label-closed="Abstract">
+        <span class="rd-abs-toggle__label">Abstract</span>
+      </button>
+    </li>
+
+<!-- ===== JMP draft link text (_pages/research.md) ===== -->
+<li><a href="{{ '/files/Torsha-Chakravorty-JMP.pdf' | relative_url }}" target="_blank" rel="noopener">Draft (PDF) &#8599;</a></li>
+
+<!-- ===== JMP abstract box opening tag (_pages/research.md) ===== -->
+  <div class="rd-abs-body" id="abs-1" hidden>
+
+<!-- ===== Font setting (_sass/_variables.scss) ===== -->
+/* Redesign: serif headings (Source Serif 4) + sans body (Inter); fonts loaded in _includes/head/custom.html */
+$serif                      : "Source Serif 4", Georgia, Times, serif;
+
+<!-- ===== Font comment (_includes/head/custom.html) ===== -->
+<!-- Redesign webfonts: Source Serif 4 (display/serif), Inter (body/UI), JetBrains Mono (rare) -->
+
+<!-- ===== Font download link (_includes/head/custom.html) ===== -->
+family=Inter:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap
+
