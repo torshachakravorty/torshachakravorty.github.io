@@ -18,7 +18,7 @@ description: "Torsha Chakravorty is a Ph.D. candidate in Economics at UC San Die
            alt="Torsha Chakravorty, Ph.D. candidate in Economics at UC San Diego." />
     </div>
     <ul class="rd-linkrow">
-      <li><a href="{{ '/cv/' | relative_url }}">CV</a></li>
+      <li><a href="{{ '/files/Torsha-Chakravorty-CV.pdf' | relative_url }}">CV</a></li>
       <li><a href="https://github.com/torshachakravorty">GitHub</a></li>
       <li><a href="https://www.linkedin.com/in/torsha-chakravorty/">LinkedIn</a></li>
       <li><a href="mailto:tchakravorty@ucsd.edu">Email</a></li>

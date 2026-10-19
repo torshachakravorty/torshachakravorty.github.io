@@ -28,7 +28,26 @@ description: "Research by Torsha Chakravorty (UCSD Economics): state capacity, b
 
 <ul class="rd-paperlist">
   <li>
-    <h3 class="rd-paper-title">Highways and Innovation in India</h3>
+    <h3 class="rd-paper-title">Cost of Access: Middlemen Rents in Obtaining Identity Certificates</h3>
+    <p class="rd-coauthors"><span class="rd-reslinks__state">Fieldwork in progress</span></p>
+    <p class="rd-finding"></p>
+
+    <ul class="rd-reslinks">
+      <li>
+        <button class="rd-abs-toggle" type="button" aria-expanded="false" aria-controls="abs-3"
+                data-label-open="Hide abstract" data-label-closed="Abstract">
+          <span class="rd-abs-toggle__label">Abstract</span>
+        </button>
+      </li>
+    </ul>
+
+    <div class="rd-abs-body" id="abs-3" hidden>
+      <p>I investigate price discrimination, administrative friction, and rent-seeking in informal brokerage networks for public service delivery. Using an audit experiment with mystery shoppers in Punjab, India, I measure how third-party brokers quote prices and completion times for official Scheduled Caste (SC) identity certificates. I experimentally vary three dimensions across paired broker visits: applicant document completeness (full paperwork versus missing ancestral caste records), service urgency (standard timeline versus an expedited request), and shopper gender. Additionally, I elicit broker narratives regarding official state-run service centers (Sewa Kendras) to test whether intermediaries strategically discredit formal channels.</p>
+    </div>
+  </li>
+
+  <li>
+    <h3 class="rd-paper-title">Highways &amp; Innovation: Evidence from India</h3>
     <p class="rd-coauthors"><span class="rd-reslinks__state">With Ishani Chatterjee</span></p>
     <p class="rd-finding"></p>
 
@@ -42,7 +61,7 @@ description: "Research by Torsha Chakravorty (UCSD Economics): state capacity, b
     </ul>
 
     <div class="rd-abs-body" id="abs-2" hidden>
-      <p>In this project, we document higher district-level patenting activity with increasing access to road transport networks in India. We explore mechanisms behind this and observe the growth of higher educational institutions, as well as increasing firm size measured by authorized capital, in response to increasing highway exposure at the district level. Newer and smaller firms are seen to come up in districts that are farther away, which suggests spatial spillovers into districts farther away from national highway networks.</p>
+      <p>We study whether transport infrastructure affects the spatial distribution of innovation in India. Districts gaining greater access to the national highway network experience increased patenting, alongside growth in higher-education institutions and firm size. We investigate whether improved connectivity raises local innovation directly or facilitates the spatial diffusion of economic activity and knowledge.</p>
     </div>
   </li>
 </ul>

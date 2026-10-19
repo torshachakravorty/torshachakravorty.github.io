@@ -1,27 +1,11 @@
 ---
-layout: archive
+# The CV tab and the homepage CV link now open the PDF directly (since 2026-10-19).
+# This page only keeps the old addresses /cv/ and /resume working: it forwards
+# visitors straight to the PDF. The old page with the built-in PDF viewer is saved in
+# _archive_claude/_pages/2026-10-19-cv-page-with-embedded-viewer.md
 title: "Curriculum Vitae"
 permalink: /cv/
-author_profile: false
 redirect_from:
   - /resume
-description: "Curriculum vitae of Torsha Chakravorty, Ph.D. candidate in Economics at UC San Diego (UCSD)."
+redirect_to: /files/Torsha-Chakravorty-CV.pdf
 ---
-
-<ul class="rd-linkrow" style="margin-top:-0.25rem;">
-  <li><a href="{{ '/files/Torsha-Chakravorty-CV.pdf' | relative_url }}" target="_blank" rel="noopener">Open in a new tab ↗</a></li>
-  <li><a href="{{ '/files/Torsha-Chakravorty-CV.pdf' | relative_url }}" download>Download PDF</a></li>
-</ul>
-
-<!-- Inline PDF viewer. Desktop browsers render the CV here directly.
-     Most phones cannot, and will show the fallback link instead. -->
-<div class="rd-pdf">
-  <object class="rd-pdf__frame"
-          data="{{ '/files/Torsha-Chakravorty-CV.pdf' | relative_url }}"
-          type="application/pdf">
-    <p class="rd-pdf__fallback">
-      Your browser can’t display the PDF on this page.
-      <a href="{{ '/files/Torsha-Chakravorty-CV.pdf' | relative_url }}">Download my CV instead</a>.
-    </p>
-  </object>
-</div>

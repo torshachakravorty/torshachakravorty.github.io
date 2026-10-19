@@ -15,7 +15,7 @@ main:
   #   url: /code/
 
   - title: "CV"
-    url: /cv/
+    url: /files/Torsha-Chakravorty-CV.pdf   # opens the PDF directly
 
   - title: "Contact"
     url: /contact/
