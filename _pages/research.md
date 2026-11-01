@@ -10,7 +10,7 @@ description: "Research by Torsha Chakravorty (UCSD Economics): state capacity, b
 
 <div class="rd-featured">
   <span class="rd-eyebrow">Job market paper</span>
-  <h2 class="rd-paper-title">Building State Capacity in Stages: Brokers in Public Service Delivery</h2>
+  <h2 class="rd-paper-title">State Capacity, Brokers, and Service Delivery</h2>
   <p class="rd-coauthors"><span class="rd-reslinks__state">With Parminder Pal Singh Sandhu · Walter Heller Memorial Prize (Best 3rd Year Paper)</span></p>
   <p class="rd-finding"></p>
 
@@ -20,7 +20,7 @@ description: "Research by Torsha Chakravorty (UCSD Economics): state capacity, b
 
   <!-- JMP abstract is always shown (no button, no 'hidden'). -->
   <div class="rd-abs-body" id="abs-1">
-    <p>Citizens need to establish eligibility for public benefits, and many pay private agents (brokers) to help obtain them. We study how this broker market responds when the government makes it easier to apply directly. A staffing reform in a large Indian state added workers who help submit applications, while leaving approving officials unchanged. Using pre-existing differences in district exposure to the reform, we find that a 1 percent staffing increase raises broker-mediated applications by 1.7 percent, compared to 1.1 percent for direct applications, and induces broker entry. Yet direct applications become faster, reducing brokers’ average speed advantage. These patterns rule out a model where public workers purely substitute for brokers and, under maintained assumptions, one where brokers only obtain priority from approvers. A model where public workers make brokers more productive can explain joint results. Our findings highlight the role of informal markets in building state capacity.</p>
+    <p>Social protection programs are central to people’s lives. However, administrative burdens in accessing them create informal markets for brokers who help applicants navigate the process for a fee. Whether these brokers substitute for public capacity or complement it remains unclear. We study this question using a reform in an Indian state that expanded staffing at public service centers to help citizens submit applications, without increasing the number of officials deciding whether to approve them. Using pre-existing differences in district exposure to the reform, we find that a 1 percent increase in staffing raises broker-mediated applications by 1.7 percent, compared to 1.1 percent for direct applications. Yet direct applications become faster, reducing brokers’ average speed advantage. These patterns rule out a model where public workers purely substitute for brokers and, under maintained assumptions, one where brokers only obtain priority through speed money. A model where public workers make brokers more productive can explain joint results. Our findings highlight the role of informal markets in building state capacity.</p>
   </div>
 </div>
 
